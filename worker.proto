@@ -1,0 +1,7 @@
+service Worker {
+  rpc ExecuteQuery (QueryRequest) returns (QueryResponse);
+}
+
+message QueryRequest {
+  string sql = 1;
+}
